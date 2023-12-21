@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 227, 227);
+}
+
+#menu-container {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+#menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.Canvas {
+    width: 90%;
+    max-width: 800px; /* Establece un ancho máximo para el contenedor */
+    margin: 100px auto; /* Centra el contenedor en la pantalla */
+    border-radius: 10px;
+    border: 1px solid black;
+    background-image: url("https://img.freepik.com/vector-premium/fondo-dibujos-animados-elementos-matematicas_23-2148157674.jpg");
+    background-position: center;
+    opacity: 0.9;
+}
+
+.Canvas kbd {
+    font-size: 20px;
+}
+
+.pedro {
+    width: 90%;
+    max-width: 300px; /* Establece un ancho máximo para el input */
+    height: 25px;
+    border-radius: 13px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.Alerta a,
+.Alerta button {
+    color: black;
+    background-size: 23px;
+    border-radius: 13px;
+    width: 100px;
+    height: 40px;
+}
+
+.libro1,
+.libro2,
+.libro3 {
+    width: 90%;
+    max-width: 200px; /* Establece un ancho máximo para los elementos */
+    height: 370px;
+    margin: 20px auto; /* Centra los elementos en la pantalla */
+    border-radius: 13px;
+}
+
+.libro2 {
+    background-color: rebeccapurple;
+}
+
+.libro3 {
+    background-color: rebeccapurple;
+    margin-left: auto; /* Coloca el tercer libro al final del contenedor */
+}
+
+.libro3 img,
+.libro2 img,
+.libro1 img {
+    border-radius: 13px;
+}
+
+/* Media query para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media only screen and (max-width: 600px) {
+    #menu-container {
+        left: 0;
+    }
+}
